@@ -8,17 +8,24 @@
     box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
+.navbar-brand{
+    color:#333;
+    float: left;
+    font-weight: bold;
+    text-shadow: 0 0 5px cornflowerblue;
 }
 
-header{
-    height: 70px;
-    width: 100%;
-    background-color: #D1D0D0;
-    padding: 20px;
-    font-size: 22px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.navbar-brand a {
+    text-decoration: none;
+    color:#333;
+}
+
+.navbar-brand span {
+    color:antiquewhite
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 .logo{
@@ -56,7 +63,7 @@ text-decoration: none;
     color:cornflowerblue
 }
 
-main{
+.menufoto{
     height: 100vh;
     width: 100%;
     background-color: #333;
@@ -68,15 +75,122 @@ main{
 
 .Cuadrado{
     color:black;
-    width: 20%;
+    width: 10%;
     border: 5px solid black;
     float: left;
-    margin: 30px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
     background-color: #D1D0D0;
     opacity: 80%;
     
 }
+
+.nuestrosproyectos {
+    background-color:aliceblue;
+    color:#333;
+    margin: 5px;
+    text-align: center;
+    height: 60px;
+}
+
+.datos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+}
+
+.ubicacion {
+    background-color:aliceblue;
+    color: #333;
+    margin: 5px;
+    text-align: center;  
+}
+
+.lugar {
+    text-align: center;
+}
+
+.botonmapa{
+    font-size: 100px;
+}
+
+.llamar {
+    text-align: center;
+}
+.botonllamar {
+    font-size: 100px;
+}
+
+
+.carousel {
+    margin: 10px;
+}
+
+.clientescard {
+    text-align: center;
+    padding: 10px;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+}
+
+h6 {
+    color: #333;
+    background-color: #D1D0D0;
+    text-align: center;
+    font-size: 60px;
+    margin: 10px;
+    width: 100%;
+}
+
+.card {
+    padding: 10px;
+    margin: 5px;
+}
+
+@media only screen and (min-width:480px) {
+    .clientescard {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    h6 {
+        width: 100%;
+        margin: 5px;
+        padding: 0px;
+    }
+    
+    .menufoto {
+        grid-template-columns: 1fr;
+    }
+
+    .Cuadrado {
+        grid-template-columns: 1fr;
+
+    }
+    
+}
+
+@media only screen and (min-width:768px) {
+    .clientescard {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        justify-content: space-around;
+        padding: 30px;
+        margin: 10px;
+
+    }
+
+    .datos {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        text-align: center;
+    }
+    
+}
+
 
 footer{
     background-color: black;

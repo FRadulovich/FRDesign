@@ -3,31 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/laptop-1839876_1920.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link rel="shortcut icon" href="IMG/laptop-1839876_1920.ico" type="image/x-icon">
+    <!-- Tipo de fuente --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    <!--Tipo de Fuente / Fin -->
+    <!--Bootstrap Inicia 5.1-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Botstrap Fin-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
     <link rel="stylesheet" href="./css/estilos.css">
     <title>FR Design</title>
 </head>
 <body>
     <header>
-        <div class="logo"> <a href="./index.html"> FR <span>Design</span> </a></div>
-        <nav class="barra">
-            <ul>
-                <li><a href="./pages/laempresa.html">La empresa</a></li>
-                <li><a href="./pages/clientes.html">Clientes</a></li>
-                <li><a href="./pages/servicios.html">Servicios</a></li>
-                <li><a href="./pages/presupuestos.html">Presupuestos</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html">FR <span>Design</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/laempresa.html">La Empresa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/clientes.html">Clientes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/presupuestos.html">Presupuestos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
         </nav>    
     </header>
-<main>
-    <div class="Cuadrado">
-        <h2>
-            «Los detalles no son detalles. Los detalles hacen el diseño.» — <br>
-            Charles Eames
-        </h2>
-    </div>  
-</main>
+
+    <main class="menufoto col-lg-12 col-md-12 col-sm-12">
+
+        <div class="Cuadrado col-lg-6 col-md-6 col-sm-12" style="width: 300px">
+            <h2>
+                «Los detalles no son detalles. Los detalles hacen el diseño.» — <br>
+                Charles Eames
+            </h2>
+        </div>  
+    </main>
+    
+<section>
+    <div class="nuestrosproyectos">
+        <h1>Nuestros proyectos</h1>
+    </div>
+        <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/Captura-de-pantalla-2023-09-21-a-las-09.11.05.jpg" alt="Padel de la Punta" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/Captura-de-pantalla-2023-11-22-a-las-16.20.50-de-tamano-mediano-jpeg.webp" alt="Zapatillas importadas" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/Captura-de-pantalla-2023-08-01-145459.jpg" alt="Power Cumbia" class="d-block w-100">
+      </div>
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+<section>
+    <div class="ubicacion">
+        <h1>¿Dónde nos encontramos?</h1>
+    </div>
+    <div class="datos">
+        <id class="lugar">
+            <div class="botonmapa">
+            <i class="fa-solid fa-map-location-dot" style="color: #74C0FC;"></i>
+            </div>
+            <h5><p>Estamos en</p></h5>
+            <p>Ituzaingo 528 - San Cristóbal (Sta. Fe)</p>
+            <p>Lunes a Viernes: 8hs a 16hs</p>
+        </id>
+        <id class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.3214457763434!2d-61.23444092407572!3d-30.31337334380033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x944a7bfe3fd33be3%3A0xf4b268d6b8969d1c!2sItuzaing%C3%B3%20528%2C%20San%20Cristobal%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1709475571250!5m2!1ses-419!2sar" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </id>
+        <id class="llamar">
+            <div class="botonllamar">
+            <i class="fa-solid fa-headset" style="color: #74C0FC;"></i>
+            </div>
+            <h5>Llamanos</h5>
+            <p>Teléfono: +54 351 6142106</p>
+            <p>Horario: Lunes a Viernes de 8hs a 20hs</p>
+        </div>
+        </id>
+    </div>   
+        
+    
+</section>
+
 <footer>
     <p>Todos los derechos reservados por copyright</p>
     <div class="redes">
@@ -41,9 +132,14 @@
         <i class="fa-regular fa-envelope"></i>
         </a>
     </div>
+
 </footer>   
+        
     <a href="#" class="subir">
         <i class="fa-regular fa-circle-up"></i>
     </a>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
-</html>
