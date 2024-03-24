@@ -1,484 +1,470 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 /* font-family: 'Libre Baskerville', serif; */
-
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.navbar-brand{
-    color:#333;
-    float: left;
-    font-weight: bold;
-    text-shadow: 0 0 5px cornflowerblue;
+navbar-brand {
+  color: #000;
+  float: left;
+  font-weight: bold;
+  text-shadow: 0 0 5px #6879F5;
 }
 
-.navbar-brand a {
-    text-decoration: none;
-    color:#333;
+navbar-brand a {
+  text-decoration: none;
+  color: #000;
 }
 
-.navbar-brand span {
-    color:antiquewhite
+navbar-brand span {
+  color: #faebd7;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-.logo{
-    color: #fff;
-    float: left;
-    font-weight: bold;
-    text-shadow: 0 0 5px #ccc;
-
+.logo {
+  color: #fff;
+  float: left;
+  font-weight: bold;
+  text-shadow: 0 0 5px #6879F5;
 }
 
 .logo a {
-    text-decoration: none;
-    color:#fff;
+  text-decoration: none;
+  color: #D1D0D0;
 }
 
 .logo span {
-    color:cornflowerblue;
+  color: #6879F5;
 }
 
-.barra{
-    float: right;
+.barra {
+  float: right;
 }
 
-.barra ul li{
-    list-style: none;
-    display: inline-block;
+.barra ul li {
+  list-style: none;
+  display: inline-block;
 }
 
 .barra a {
-color: #fff;
-text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .barra a:hover {
-    color:cornflowerblue
+  color: #6879F5;
 }
 
-.menufoto{
-    height: 100vh;
-    width: 100%;
-    background-color: #333;
-    background-image: url(../img/laptop-2838921_1920.jpg);
-    background-size: cover;
-    background-position: left;
-    opacity: 80%;
+.menufoto {
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  background-image: url(../img/laptop-2838921_1920.jpg);
+  background-size: cover;
+  background-position: left;
+  opacity: 80%;
 }
 
-.Cuadrado{
-    color:black;
-    width: 10%;
-    border: 5px solid black;
-    float: left;
-    margin: 10px;
-    padding: 10px;
-    background-color: #D1D0D0;
-    opacity: 80%;
-    
+.Cuadrado {
+  color: #000;
+  width: 10%;
+  border: 5px solid black;
+  float: left;
+  margin: 10px;
+  padding: 10px;
+  background-color: #D1D0D0;
+  opacity: 80%;
 }
 
 .nuestrosproyectos {
-    background-color:aliceblue;
-    color:#333;
-    margin: 5px;
-    text-align: center;
-    height: 60px;
+  background-color: #D1D0D0;
+  color: #000;
+  margin: 5px;
+  text-align: center;
+  height: 60px;
 }
 
 .datos {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
 }
 
 .ubicacion {
-    background-color:aliceblue;
-    color: #333;
-    margin: 5px;
-    text-align: center;  
+  background-color: #D1D0D0;
+  color: #000;
+  margin: 5px;
+  text-align: center;
 }
 
 .lugar {
-    text-align: center;
+  text-align: center;
 }
 
-.botonmapa{
-    font-size: 100px;
+.botonmapa {
+  font-size: 100px;
 }
 
 .llamar {
-    text-align: center;
-}
-.botonllamar {
-    font-size: 100px;
+  text-align: center;
 }
 
+.botonllamar {
+  font-size: 100px;
+}
 
 .carousel {
-    margin: 10px;
+  margin: 10px;
 }
 
 .clientescard {
-    text-align: center;
-    padding: 10px;
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(12, 1fr);
+  text-align: center;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(12, 1fr);
 }
 
 h6 {
-    color: #333;
-    background-color: #D1D0D0;
-    text-align: center;
-    font-size: 60px;
-    margin: 10px;
-    width: 100%;
+  color: #000;
+  background-color: #D1D0D0;
+  text-align: center;
+  font-size: 60px;
+  margin: 10px;
+  width: 100%;
 }
 
 .card {
-    padding: 10px;
+  padding: 10px;
+  margin: 5px;
+}
+
+@media only screen and (min-width: 480px) {
+  .clientescard {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+  h6 {
+    width: 100%;
     margin: 5px;
+    padding: 0px;
+  }
+  .menufoto {
+    grid-template-columns: 1fr;
+  }
+  .Cuadrado {
+    grid-template-columns: 1fr;
+  }
 }
-
-@media only screen and (min-width:480px) {
-    .clientescard {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(6, 1fr);
-    }
-
-    h6 {
-        width: 100%;
-        margin: 5px;
-        padding: 0px;
-    }
-    
-    .menufoto {
-        grid-template-columns: 1fr;
-    }
-
-    .Cuadrado {
-        grid-template-columns: 1fr;
-
-    }
-    
-}
-
-@media only screen and (min-width:768px) {
-    .clientescard {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        justify-content: space-around;
-        padding: 30px;
-        margin: 10px;
-
-    }
-
-    .datos {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: row;
-        text-align: center;
-    }
-    
-}
-
-
-footer{
-    background-color: black;
-    color: #fff;
-    text-align: center;
+@media only screen and (min-width: 768px) {
+  .clientescard {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: space-around;
     padding: 30px;
-    font-size: 20px;
-}
-
-footer p{
-    margin-bottom: 20px;
-}
-
-.redes a{
-    color: #D1D0D0;
-    text-decoration: none;
-    font-size: 30px;
+    margin: 10px;
+  }
+  .datos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
     text-align: center;
+  }
+}
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  font-size: 20px;
+}
+
+footer p {
+  margin-bottom: 20px;
+}
+
+.redes a {
+  color: #D1D0D0;
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
 }
 
 .subir {
-    height: 35px;
-    width: 35px;
-    background-color: #D1D0D0;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    text-align: center;
-    color: #fff;
-    line-height: 35px;
-    font-size: 35px;
-    box-shadow: 0 0 5px #fff;
-    border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  background-color: #D1D0D0;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  text-align: center;
+  color: #fff;
+  line-height: 35px;
+  font-size: 35px;
+  box-shadow: 0 0 5px #fff;
+  border-radius: 50%;
 }
 
 .empresa {
-    color:black;
-    width: auto;
-    border: 3px solid black;
-    margin: 20px 20px;
-    padding: 20px 30px;
-    font-size: 15px;
-    text-align: center;
-    background-color: #D1D0D0;
-    font-family: 'Times New Roman', Times, serif;
+  color: #000;
+  width: auto;
+  border: 3px solid #000;
+  margin: 20px 20px;
+  padding: 20px 30px;
+  font-size: 15px;
+  text-align: center;
+  background-color: #D1D0D0;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .empresa span {
-    color:cornflowerblue;
-    font-family: 'Libre Baskerville';
-    font-weight: bold;
+  color: #6879F5;
+  font-family: "Libre Baskerville";
+  font-weight: bold;
 }
 
 .empresa p2 {
-    font-family: 'Libre Baskerville'
+  font-family: "Libre Baskerville";
 }
 
 .Contacto {
-    color:#333;
-    background-color: #D1D0D0;
-    width: auto;
-    border: 3px solid #333;
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
+  color: #000;
+  background-color: #D1D0D0;
+  width: auto;
+  border: 3px solid #000;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
 }
 
 .portfolio {
-    color:black;
-    width: auto;
-    border: 3px solid black;
-    margin: 20px 20px;
-    padding: 20px 30px;
-    font-size: 10px;
-    text-align: center;
-    background-color: #D1D0D0;
-    font-family: 'Times New Roman', Times, serif;
+  color: #000;
+  width: auto;
+  border: 3px solid #000;
+  margin: 20px 20px;
+  padding: 20px 30px;
+  font-size: 10px;
+  text-align: center;
+  background-color: #D1D0D0;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .portfolio span {
-    color:cornflowerblue;
-    font-family: 'Libre Baskerville';
-    font-weight: bold;
-    font-size: 20px;
+  color: #6879F5;
+  font-family: "Libre Baskerville";
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .cliente1 {
-    padding: 10px;
-    margin-left: 100px;
-    text-align: center;
-    font-size: large;
-    width: 300px;
-    font-size: 15px;
+  padding: 10px;
+  margin-left: 100px;
+  text-align: center;
+  font-size: large;
+  width: 300px;
+  font-size: 15px;
 }
 
 .cliente1 span {
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 25px;
-    text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: center;
 }
 
 .cliente2 {
-    padding: 10px;
-    margin-left: 100px;
-    text-align: center;
-    font-size: large;
-    width: 300px;
-    font-size: 15px;
-    margin-top: 15px;
+  padding: 10px;
+  margin-left: 100px;
+  text-align: center;
+  font-size: large;
+  width: 300px;
+  font-size: 15px;
+  margin-top: 15px;
 }
 
 .cliente2 span {
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 25px;
-    text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: center;
 }
 
 .cliente3 {
-    padding: 10px;
-    margin-left: 100px;
-    text-align: center;
-    font-size: large;
-    width: 300px;
-    font-size: 15px;
-    margin-top: 15px;
+  padding: 10px;
+  margin-left: 100px;
+  text-align: center;
+  font-size: large;
+  width: 300px;
+  font-size: 15px;
+  margin-top: 15px;
 }
 
 .cliente3 span {
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 25px;
-    text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: center;
 }
 
 .cliente4 {
-    padding: 10px;
-    margin-left: 100px;
-    text-align: center;
-    font-size: large;
-    width: 300px;
-    font-size: 15px;
-    margin-top: 15px;
+  padding: 10px;
+  margin-left: 100px;
+  text-align: center;
+  font-size: large;
+  width: 300px;
+  font-size: 15px;
+  margin-top: 15px;
 }
 
 .cliente4 span {
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 25px;
-    text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: center;
 }
 
 .cliente5 {
-    padding: 10px;
-    margin-left: 100px;
-    text-align: center;
-    font-size: large;
-    width: 300px;
-    font-size: 15px;
-    margin-top: 15px;
+  padding: 10px;
+  margin-left: 100px;
+  text-align: center;
+  font-size: large;
+  width: 300px;
+  font-size: 15px;
+  margin-top: 15px;
 }
 
 .cliente5 span {
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 25px;
-    text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: center;
 }
 
 .servicios {
-    color:black;
-    width: auto;
-    border: 3px solid black;
-    margin: 10px 10px;
-    padding: 10px 10px;
-    font-size: 10px;
-    text-align: center;
-    background-color: #D1D0D0;
-    font-family: 'Times New Roman', Times, serif;
+  color: #000;
+  width: auto;
+  border: 3px solid #000;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  font-size: 10px;
+  text-align: center;
+  background-color: #D1D0D0;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .servicios span {
-    color:cornflowerblue;
-    font-family: 'Libre Baskerville';
-    font-weight: bold;
-    font-size: 20px;
+  color: #6879F5;
+  font-family: "Libre Baskerville";
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .diseñografico {
-    padding: 10px;
-    margin-left: 100px;
-    text-align: center;
-    font-size: large;
-    width: 300px;
-    font-size: 20px;
-    border-radius: 40%;
+  padding: 10px;
+  margin-left: 100px;
+  text-align: center;
+  font-size: large;
+  width: 300px;
+  font-size: 20px;
+  border-radius: 40%;
 }
 
 .diseñografico span {
-    padding: 10px;
-    margin-top: 10px;
-    font-size:30px;
-    text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .diseñografico img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .desarrolloweb {
-    padding: 20px;
-    margin-left: 100px;
-    text-align: center;
-    font-size: large;
-    width: 300px;
-    font-size: 20px;
-    border-radius: 40%;
+  padding: 20px;
+  margin-left: 100px;
+  text-align: center;
+  font-size: large;
+  width: 300px;
+  font-size: 20px;
+  border-radius: 40%;
 }
 
 .desarrolloweb span {
-    padding: 10px;
-    margin-top: 10px;
-    font-size:30px;
-    text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .desarrolloweb img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .marketingdigital {
-    padding: 20px;
-    margin-left: 100px;
-    text-align: center;
-    font-size: large;
-    width: 300px;
-    font-size: 20px;
-    border-radius: 40%;
+  padding: 20px;
+  margin-left: 100px;
+  text-align: center;
+  font-size: large;
+  width: 300px;
+  font-size: 20px;
+  border-radius: 40%;
 }
 
 .marketingdigital span {
-    padding: 10px;
-    margin-top: 10px;
-    font-size:30px;
-    text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .marketingdigital img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .contenedor {
-    display: flex; /* Utiliza flexbox para organizar las columnas */
+  display: flex; /* Utiliza flexbox para organizar las columnas */
 }
 
 .columna {
-    flex: 1; /* Hace que las columnas ocupen el mismo ancho */
-    padding: 20px; /* Añade espacio interno alrededor de cada columna */
+  flex: 1; /* Hace que las columnas ocupen el mismo ancho */
+  padding: 20px; /* Añade espacio interno alrededor de cada columna */
 }
 
 .columna img {
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la columna */
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho de la columna */
 }
 
 .columna h2 {
-    font-size: 24px; /* Tamaño del título */
+  font-size: 24px; /* Tamaño del título */
 }
 
 .columna p {
-    font-size: 16px; /* Tamaño del párrafo */
+  font-size: 16px; /* Tamaño del párrafo */
 }
 
 .presupuestos {
-    color:black;
-    width: auto;
-    border: 3px solid black;
-    margin: 20px 20px;
-    padding: 20px 30px;
-    font-size: 10px;
-    text-align: center;
-    background-color: #D1D0D0;
-    font-family: 'Times New Roman', Times, serif;
+  color: #000;
+  width: auto;
+  border: 3px solid #000;
+  margin: 20px 20px;
+  padding: 20px 30px;
+  font-size: 10px;
+  text-align: center;
+  background-color: #D1D0D0;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .presupuestos span {
-    color:cornflowerblue;
-    font-family: 'Libre Baskerville';
-    font-weight: bold;
-    font-size: 20px;
-}
+  color: #6879F5;
+  font-family: "Libre Baskerville";
+  font-weight: bold;
+  font-size: 20px;
+}/*# sourceMappingURL=estilos.css.map */
