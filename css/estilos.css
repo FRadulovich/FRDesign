@@ -1,25 +1,22 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
-/* font-family: 'Libre Baskerville', serif; */
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-navbar-brand {
+/* font-family: 'Libre Baskerville', serif; */
+.navbar-brand {
   color: #000;
   float: left;
   font-weight: bold;
   text-shadow: 0 0 5px #6879F5;
 }
-
-navbar-brand a {
+.navbar-brand a {
   text-decoration: none;
   color: #000;
 }
-
-navbar-brand span {
+.navbar-brand span {
   color: #faebd7;
 }
 
@@ -33,12 +30,10 @@ html {
   font-weight: bold;
   text-shadow: 0 0 5px #6879F5;
 }
-
 .logo a {
   text-decoration: none;
   color: #D1D0D0;
 }
-
 .logo span {
   color: #6879F5;
 }
@@ -46,18 +41,15 @@ html {
 .barra {
   float: right;
 }
-
 .barra ul li {
   list-style: none;
   display: inline-block;
 }
-
 .barra a {
   color: #fff;
   text-decoration: none;
 }
-
-.barra a:hover {
+.barra:hover {
   color: #6879F5;
 }
 
@@ -102,6 +94,7 @@ html {
   color: #000;
   margin: 5px;
   text-align: center;
+  height: 60px;
 }
 
 .lugar {
@@ -176,6 +169,20 @@ h6 {
     justify-content: space-evenly;
     flex-direction: row;
     text-align: center;
+  }
+  .contenedor-servicios {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+  }
+  .servicios {
+    text-align: center;
+  }
+  .contenedor-presupuestos {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    grid-template-rows: repeat(3, 1fr);
   }
 }
 footer {
@@ -347,119 +354,84 @@ footer p {
   text-align: center;
 }
 
-.servicios {
+.menuservicio {
   color: #000;
-  width: auto;
-  border: 3px solid #000;
-  margin: 10px 10px;
-  padding: 10px 10px;
+  width: 100%;
+  margin-top: 5px;
+  margin-left: 1px;
+  border: 3px solid black;
   font-size: 10px;
-  text-align: center;
   background-color: #D1D0D0;
   font-family: "Times New Roman", Times, serif;
 }
 
-.servicios span {
+.menuservicio span {
   color: #6879F5;
   font-family: "Libre Baskerville";
   font-weight: bold;
-  font-size: 20px;
-}
-
-.diseñografico {
-  padding: 10px;
-  margin-left: 100px;
-  text-align: center;
-  font-size: large;
-  width: 300px;
-  font-size: 20px;
-  border-radius: 40%;
-}
-
-.diseñografico span {
-  padding: 10px;
-  margin-top: 10px;
   font-size: 30px;
+  margin: 5px;
+}
+
+.prueba1 {
+  margin: 10px;
+  border: 3px solid black;
   text-align: center;
 }
 
-.diseñografico img {
-  border-radius: 50%;
-}
-
-.desarrolloweb {
-  padding: 20px;
-  margin-left: 100px;
-  text-align: center;
-  font-size: large;
-  width: 300px;
-  font-size: 20px;
-  border-radius: 40%;
-}
-
-.desarrolloweb span {
-  padding: 10px;
-  margin-top: 10px;
+.prueba1 h3 {
   font-size: 30px;
+  margin: 10px;
+}
+
+.prueba1 img {
+  width: 250px;
+  margin: 10px;
+}
+
+.prueba2 {
+  margin: 10px;
+  border: 3px solid #000;
   text-align: center;
 }
 
-.desarrolloweb img {
-  border-radius: 50%;
-}
-
-.marketingdigital {
-  padding: 20px;
-  margin-left: 100px;
-  text-align: center;
-  font-size: large;
-  width: 300px;
-  font-size: 20px;
-  border-radius: 40%;
-}
-
-.marketingdigital span {
-  padding: 10px;
-  margin-top: 10px;
+.prueba2 h3 {
   font-size: 30px;
+  margin: 10px;
+}
+
+.prueba2 img {
+  width: 250px;
+  margin: 10px;
+}
+
+.prueba3 {
+  margin: 10px;
+  border: 3px solid black;
   text-align: center;
 }
 
-.marketingdigital img {
-  border-radius: 50%;
+.prueba3 h3 {
+  font-size: 30px;
+  margin: 10px;
 }
 
-.contenedor {
-  display: flex; /* Utiliza flexbox para organizar las columnas */
-}
-
-.columna {
-  flex: 1; /* Hace que las columnas ocupen el mismo ancho */
-  padding: 20px; /* Añade espacio interno alrededor de cada columna */
-}
-
-.columna img {
-  width: 100%; /* Asegura que la imagen ocupe todo el ancho de la columna */
-}
-
-.columna h2 {
-  font-size: 24px; /* Tamaño del título */
-}
-
-.columna p {
-  font-size: 16px; /* Tamaño del párrafo */
+.prueba3 img {
+  width: 250px;
+  margin: 10px;
 }
 
 .presupuestos {
   color: #000;
   width: auto;
   border: 3px solid #000;
-  margin: 20px 20px;
-  padding: 20px 30px;
+  margin: 5px 5px;
+  padding: 10px 10px;
   font-size: 10px;
   text-align: center;
   background-color: #D1D0D0;
   font-family: "Times New Roman", Times, serif;
+  text-align: center;
 }
 
 .presupuestos span {
@@ -467,4 +439,53 @@ footer p {
   font-family: "Libre Baskerville";
   font-weight: bold;
   font-size: 20px;
+  font-size: 30px;
+}
+
+.columna1 {
+  margin: 10px;
+  border: 3px solid black;
+  text-align: center;
+}
+
+.columna1 h3 {
+  font-size: 30px;
+  margin: 10px;
+}
+
+.columna1 img {
+  width: 280px;
+  margin: 5px 5px;
+}
+
+.columna2 {
+  margin: 10px;
+  border: 3px solid #000;
+  text-align: center;
+}
+
+.columna2 h3 {
+  font-size: 30px;
+  margin: 10px;
+}
+
+.columna2 img {
+  width: 280px;
+  margin: 5px 5px;
+}
+
+.columna3 {
+  margin: 10px;
+  border: 3px solid black;
+  text-align: center;
+}
+
+.columnna3 h3 {
+  font-size: 30px;
+  margin: 10px;
+}
+
+.columna3 img {
+  width: 280px;
+  margin: 5px 5px;
 }/*# sourceMappingURL=estilos.css.map */

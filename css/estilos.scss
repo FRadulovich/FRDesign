@@ -1,3 +1,9 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 /* font-family: 'Libre Baskerville', serif; */
@@ -23,27 +29,20 @@ $Letra20: 20px;
 $Letra15: 15px;
 $Letra10: 10px;
 
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-navbar-brand {
+.navbar-brand {
     color:$negro;
     float: left;
     font-weight: bold;
     text-shadow: 0 0 5px $color1;
-}
-
-navbar-brand a {
-    text-decoration: none;
-    color:$negro;
-}
-
-navbar-brand span {
-    color:$color2;
-}
+    a {
+        text-decoration: none;
+        color:$negro;
+    }
+        
+        span {
+            color:$color2;
+        }
+}      
 
 html {
     scroll-behavior: smooth;
@@ -54,33 +53,33 @@ html {
     float: left;
     font-weight: bold;
     text-shadow: 0 0 5px $color1;
-}
+    a {
+        text-decoration: none;
+        color:$clarito;
+    }    
 
-.logo a {
-    text-decoration: none;
-    color:$clarito;
-}    
-
-.logo span {
-    color:$color1;
+        span {
+            color:$color1;
+    }
 }
 
 .barra {
     float: right;
-}
 
-.barra ul li {
-    list-style: none;
-    display: inline-block;
-}
 
-.barra a {
-color:$blanco;
-text-decoration: none;
-}
+    ul li {
+        list-style: none;
+        display: inline-block;
+    }
+    
+    a {
+        color:$blanco;
+        text-decoration: none;
+    }
 
-.barra a:hover {
-    color:$color1;
+    &:hover {
+        color:$color1;
+    }
 }
 
 .menufoto {
@@ -126,6 +125,7 @@ text-decoration: none;
     color: $negro;
     margin: 5px;
     text-align: center;  
+    height: 60px;
 }
 
 .lugar {
@@ -191,6 +191,7 @@ h6 {
         grid-template-columns: 1fr;
 
     }
+
     
 }
 
@@ -210,7 +211,23 @@ h6 {
         flex-direction: row;
         text-align: center;
     }
-    
+
+    .contenedor-servicios {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .servicios {
+        text-align: center;
+    }
+
+    .contenedor-presupuestos {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        grid-template-rows: repeat(3, 1fr);
+    }
 }
 
 footer {
@@ -382,124 +399,133 @@ footer p {
     text-align: center;
 }
 
-.servicios {
+.menuservicio {
     color:$negro;
-    width: auto;
-    border: 3px solid $negro;
-    margin: 10px 10px;
-    padding: 10px 10px;
-    font-size: $Letra10;
-    text-align: center;
-    background-color: $clarito;
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 1px;
+    border: 3px solid black;
+    font-size: 10px;
+    background-color:$clarito;
     font-family: $Fuente1;
 }
 
-.servicios span {
+.menuservicio span {
     color:$color1;
     font-family: $Fuente2;
     font-weight: bold;
-    font-size: $Letra20;
+    font-size: 30px;
+    margin: 5px;
 }
 
-.diseñografico {
-    padding: 10px;
-    margin-left: 100px;
-    text-align: center;
-    font-size: large;
-    width: 300px;
-    font-size: $Letra20;
-    border-radius: 40%;
-}
+.prueba1 {
+    margin: 10px;
+    border: 3px solid black;
+    text-align: center;}
 
-.diseñografico span {
-    padding: 10px;
-    margin-top: 10px;
-    font-size:$Letra30;
-    text-align: center;
-}
-
-.diseñografico img {
-    border-radius: 50%;
-}
-
-.desarrolloweb {
-    padding: 20px;
-    margin-left: 100px;
-    text-align: center;
-    font-size: large;
-    width: 300px;
-    font-size: $Letra20;
-    border-radius: 40%;
-}
-
-.desarrolloweb span {
-    padding: 10px;
-    margin-top: 10px;
-    font-size:$Letra30;
-    text-align: center;
-}
-
-.desarrolloweb img {
-    border-radius: 50%;
-}
-
-.marketingdigital {
-    padding: 20px;
-    margin-left: 100px;
-    text-align: center;
-    font-size: large;
-    width: 300px;
-    font-size: $Letra20;
-    border-radius: 40%;
-}
-
-.marketingdigital span {
-    padding: 10px;
-    margin-top: 10px;
+.prueba1 h3 {
     font-size: $Letra30;
-    text-align: center;
+    margin: 10px;
 }
 
-.marketingdigital img {
-    border-radius: 50%;
+.prueba1 img {
+    width: 250px;
+    margin: 10px;
 }
 
-.contenedor {
-    display: flex; /* Utiliza flexbox para organizar las columnas */
+.prueba2 {
+    margin: 10px;
+    border: 3px solid $negro;
+    text-align: center;}
+
+.prueba2 h3 {
+    font-size: $Letra30;
+    margin: 10px;
 }
 
-.columna {
-    flex: 1; /* Hace que las columnas ocupen el mismo ancho */
-    padding: 20px; /* Añade espacio interno alrededor de cada columna */
+.prueba2 img {
+    width: 250px;
+    margin: 10px;
 }
 
-.columna img {
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la columna */
+.prueba3 {
+    margin: 10px;
+    border: 3px solid black;
+    text-align: center;}
+
+.prueba3 h3 {
+    font-size: $Letra30;
+    margin: 10px;
 }
 
-.columna h2 {
-    font-size: 24px; /* Tamaño del título */
-}
-
-.columna p {
-    font-size: 16px; /* Tamaño del párrafo */
+.prueba3 img {
+    width: 250px;
+    margin: 10px;
 }
 
 .presupuestos {
     color:$negro;
     width: auto;
     border: 3px solid $negro;
-    margin: 20px 20px;
-    padding: 20px 30px;
+    margin: 5px 5px;
+    padding: 10px 10px;
     font-size: $Letra10;
     text-align: center;
     background-color: $clarito;
     font-family: $Fuente1;
+    text-align: center;
 }
+
 
 .presupuestos span {
     color:$color1;
     font-family: $Fuente2;
     font-weight: bold;
     font-size: $Letra20;
+    font-size: 30px;
+}
+
+.columna1 {
+    margin: 10px;
+    border: 3px solid black;
+    text-align: center;}
+
+.columna1 h3 {
+    font-size: $Letra30;
+    margin: 10px;
+}
+
+.columna1 img {
+    width: 280px;
+    margin: 5px 5px;
+}
+
+.columna2 {
+    margin: 10px;
+    border: 3px solid $negro;
+    text-align: center;}
+
+.columna2 h3 {
+    font-size: $Letra30;
+    margin: 10px;
+}
+
+.columna2 img {
+    width: 280px;
+    margin: 5px 5px;
+}
+
+.columna3 {
+    margin: 10px;
+    border: 3px solid black;
+    text-align: center;}
+
+.columnna3 h3 {
+    font-size: $Letra30;
+    margin: 10px;
+}
+
+.columna3 img {
+    width: 280px;
+    margin: 5px 5px;
 }
