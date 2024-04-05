@@ -125,7 +125,7 @@ html {
   grid-template-rows: repeat(12, 1fr);
 }
 
-h6 {
+g {
   color: #000;
   background-color: #D1D0D0;
   text-align: center;
