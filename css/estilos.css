@@ -89,7 +89,6 @@
 }
 
 .card:hover {
-  /*transform: translateY(-1.5%);*/
   transform: scale(1.1);
   z-index: 1.2;
 }
@@ -381,4 +380,51 @@ input:focus {
 .columna3 img {
   width: 280px;
   margin: 5px 5px;
+}
+
+.navbar-brand {
+  color: #000;
+  float: left;
+  font-weight: bold;
+  text-shadow: 0 0 5px #6879F5;
+}
+.navbar-brand a {
+  text-decoration: none;
+  color: #000;
+}
+.navbar-brand span {
+  color: #faebd7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.logo {
+  color: #fff;
+  float: left;
+  font-weight: bold;
+  text-shadow: 0 0 5px #6879F5;
+}
+.logo a {
+  text-decoration: none;
+  color: #D1D0D0;
+}
+.logo span {
+  color: #6879F5;
+}
+
+.barra {
+  float: right;
+}
+.barra ul li {
+  list-style: none;
+  display: inline-block;
+}
+.barra a {
+  color: #fff;
+  text-decoration: none;
+}
+.barra:hover {
+  color: #6879F5;
 }/*# sourceMappingURL=estilos.css.map */
