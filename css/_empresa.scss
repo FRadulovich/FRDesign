@@ -1,0 +1,37 @@
+.empresa {
+    color:$negro;
+    width: auto;
+    border: 3px solid $negro;
+    margin: 20px 20px;
+    padding: 20px 30px;
+    font-size: $Letra15;
+    text-align: center;
+    background-color: $clarito;
+    font-family: $Fuente1;
+}
+
+.empresa span {
+    color:$color1;
+    font-family: $Fuente2;
+    font-weight: bold;
+}
+
+.empresa p2 {
+    font-family: $Fuente2;
+}
+
+.Contacto {
+    color:$negro;
+    background-color: $clarito;
+    width: auto;
+    border: 3px solid $negro;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+input:focus {
+    font-size: 40px;
+    border: 5px dotted gray;
+    color: green($color: #000000);
+}

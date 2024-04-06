@@ -1,0 +1,63 @@
+.menuservicio {
+    color:$negro;
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 1px;
+    border: 3px solid black;
+    font-size: 10px;
+    background-color:$clarito;
+    font-family: $Fuente1;
+}
+
+.menuservicio span {
+    color:$color1;
+    font-family: $Fuente2;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 5px;
+}
+
+.prueba1 {
+    margin: 10px;
+    border: 3px solid black;
+    text-align: center;}
+
+.prueba1 h3 {
+    font-size: $Letra30;
+    margin: 10px;
+}
+
+.prueba1 img {
+    width: 250px;
+    margin: 10px;
+}
+
+.prueba2 {
+    margin: 10px;
+    border: 3px solid $negro;
+    text-align: center;}
+
+.prueba2 h3 {
+    font-size: $Letra30;
+    margin: 10px;
+}
+
+.prueba2 img {
+    width: 250px;
+    margin: 10px;
+}
+
+.prueba3 {
+    margin: 10px;
+    border: 3px solid black;
+    text-align: center;}
+
+.prueba3 h3 {
+    font-size: $Letra30;
+    margin: 10px;
+}
+
+.prueba3 img {
+    width: 250px;
+    margin: 10px;
+}

@@ -1,0 +1,43 @@
+.clientescard {
+    text-align: center;
+    padding: 10px;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    
+}
+
+.card {
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    border-radius: 10px $negro;
+    cursor: default;
+    transition: 1s;
+    display: block;
+}
+
+.card:hover {
+    /*transform: translateY(-1.5%);*/
+    transform: scale(1.1);
+    z-index: 1.2;
+}
+
+h6 {
+    color: $negro;
+    background-color: $clarito;
+    text-align: center;
+    font-size: $Letra60;
+    margin: 10px;
+    width: 100%;
+    
+}
+
+@keyframes aparecer {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

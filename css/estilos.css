@@ -6,53 +6,6 @@
 }
 
 /* font-family: 'Libre Baskerville', serif; */
-.navbar-brand {
-  color: #000;
-  float: left;
-  font-weight: bold;
-  text-shadow: 0 0 5px #6879F5;
-}
-.navbar-brand a {
-  text-decoration: none;
-  color: #000;
-}
-.navbar-brand span {
-  color: #faebd7;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.logo {
-  color: #fff;
-  float: left;
-  font-weight: bold;
-  text-shadow: 0 0 5px #6879F5;
-}
-.logo a {
-  text-decoration: none;
-  color: #D1D0D0;
-}
-.logo span {
-  color: #6879F5;
-}
-
-.barra {
-  float: right;
-}
-.barra ul li {
-  list-style: none;
-  display: inline-block;
-}
-.barra a {
-  color: #fff;
-  text-decoration: none;
-}
-.barra:hover {
-  color: #6879F5;
-}
-
 .menufoto {
   height: 100vh;
   width: 100%;
@@ -125,7 +78,23 @@ html {
   grid-template-rows: repeat(12, 1fr);
 }
 
-g {
+.card {
+  padding: 10px;
+  margin: 5px;
+  width: 100%;
+  border-radius: 10px #000;
+  cursor: default;
+  transition: 1s;
+  display: block;
+}
+
+.card:hover {
+  /*transform: translateY(-1.5%);*/
+  transform: scale(1.1);
+  z-index: 1.2;
+}
+
+h6 {
   color: #000;
   background-color: #D1D0D0;
   text-align: center;
@@ -134,11 +103,14 @@ g {
   width: 100%;
 }
 
-.card {
-  padding: 10px;
-  margin: 5px;
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
 @media only screen and (min-width: 480px) {
   .clientescard {
     grid-template-columns: 1fr 1fr;
@@ -150,7 +122,7 @@ g {
     padding: 0px;
   }
   .menufoto {
-    grid-template-columns: 1fr;
+    grid-template-columns: 200px;
   }
   .Cuadrado {
     grid-template-columns: 1fr;
@@ -175,6 +147,15 @@ g {
     display: flex;
     flex-direction: row;
   }
+  .prueba1:hover {
+    transform: translateY(-1%);
+  }
+  .prueba2:hover {
+    transform: translateY(-1%);
+  }
+  .prueba3:hover {
+    transform: translateY(-1%);
+  }
   .servicios {
     text-align: center;
   }
@@ -183,6 +164,15 @@ g {
     display: flex;
     flex-direction: row;
     grid-template-rows: repeat(3, 1fr);
+  }
+  .columna1:hover {
+    transform: translateX(-1%);
+  }
+  .columna2:hover {
+    transform: translateX(-1%);
+  }
+  .columna3:hover {
+    transform: translateX(-2%);
   }
 }
 footer {
@@ -251,107 +241,10 @@ footer p {
   text-align: center;
 }
 
-.portfolio {
-  color: #000;
-  width: auto;
-  border: 3px solid #000;
-  margin: 20px 20px;
-  padding: 20px 30px;
-  font-size: 10px;
-  text-align: center;
-  background-color: #D1D0D0;
-  font-family: "Times New Roman", Times, serif;
-}
-
-.portfolio span {
-  color: #6879F5;
-  font-family: "Libre Baskerville";
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.cliente1 {
-  padding: 10px;
-  margin-left: 100px;
-  text-align: center;
-  font-size: large;
-  width: 300px;
-  font-size: 15px;
-}
-
-.cliente1 span {
-  padding: 10px;
-  margin-top: 10px;
-  font-size: 25px;
-  text-align: center;
-}
-
-.cliente2 {
-  padding: 10px;
-  margin-left: 100px;
-  text-align: center;
-  font-size: large;
-  width: 300px;
-  font-size: 15px;
-  margin-top: 15px;
-}
-
-.cliente2 span {
-  padding: 10px;
-  margin-top: 10px;
-  font-size: 25px;
-  text-align: center;
-}
-
-.cliente3 {
-  padding: 10px;
-  margin-left: 100px;
-  text-align: center;
-  font-size: large;
-  width: 300px;
-  font-size: 15px;
-  margin-top: 15px;
-}
-
-.cliente3 span {
-  padding: 10px;
-  margin-top: 10px;
-  font-size: 25px;
-  text-align: center;
-}
-
-.cliente4 {
-  padding: 10px;
-  margin-left: 100px;
-  text-align: center;
-  font-size: large;
-  width: 300px;
-  font-size: 15px;
-  margin-top: 15px;
-}
-
-.cliente4 span {
-  padding: 10px;
-  margin-top: 10px;
-  font-size: 25px;
-  text-align: center;
-}
-
-.cliente5 {
-  padding: 10px;
-  margin-left: 100px;
-  text-align: center;
-  font-size: large;
-  width: 300px;
-  font-size: 15px;
-  margin-top: 15px;
-}
-
-.cliente5 span {
-  padding: 10px;
-  margin-top: 10px;
-  font-size: 25px;
-  text-align: center;
+input:focus {
+  font-size: 40px;
+  border: 5px dotted gray;
+  color: 0;
 }
 
 .menuservicio {

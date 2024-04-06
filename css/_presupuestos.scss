@@ -1,0 +1,70 @@
+@mixin columnaH {
+    font-size: $Letra30;
+    margin: 10px;
+}
+
+@mixin columnaIMG {
+    width: 280px;
+    margin: 5px 5px;
+}
+
+.presupuestos {
+    color:$negro;
+    width: auto;
+    border: 3px solid $negro;
+    margin: 5px 5px;
+    padding: 10px 10px;
+    font-size: $Letra10;
+    text-align: center;
+    background-color: $clarito;
+    font-family: $Fuente1;
+    text-align: center;
+}
+
+
+.presupuestos span {
+    color:$color1;
+    font-family: $Fuente2;
+    font-weight: bold;
+    font-size: $Letra20;
+    font-size: 30px;
+}
+
+.columna1 {
+    margin: 10px;
+    border: 3px solid black;
+    text-align: center;}
+
+.columna1 h3 {
+    @include columnaH;
+}
+
+.columna1 img {
+    @include columnaIMG;
+}
+
+.columna2 {
+    margin: 10px;
+    border: 3px solid $negro;
+    text-align: center;}
+
+.columna2 h3 {
+    @include columnaH;
+}
+
+.columna2 img {
+    @include columnaIMG;
+}
+
+.columna3 {
+    margin: 10px;
+    border: 3px solid black;
+    text-align: center;}
+
+.columnna3 h3 {
+    @include columnaH;
+}
+
+.columna3 img {
+    @include columnaIMG;
+}

@@ -1,0 +1,33 @@
+footer {
+    background-color: $negro;
+    color: $blanco;
+    text-align: center;
+    padding: 30px;
+    font-size: $Letra20;
+}
+
+footer p {
+    margin-bottom: 20px;
+}
+
+.redes a {
+    color: $clarito;
+    text-decoration: none;
+    font-size: $Letra30;
+    text-align: center;
+}
+
+.subir {
+    height: 35px;
+    width: 35px;
+    background-color: $clarito;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    color:$blanco;
+    line-height: 35px;
+    font-size: $Letra35;
+    box-shadow: 0 0 5px $blanco;
+    border-radius: 50%;
+}

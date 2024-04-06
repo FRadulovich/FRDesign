@@ -1,0 +1,66 @@
+.menufoto {
+    height: 100vh;
+    width: 100%;
+    background-color: $negro;
+    background-image: url(../img/laptop-2838921_1920.jpg);
+    background-size: cover;
+    background-position: left;
+    opacity: 80%;
+}
+
+.Cuadrado {
+    color:$negro;
+    width: 10%;
+    border: 5px solid black;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    background-color: $clarito;
+    opacity: 80%;
+    
+}
+
+
+.nuestrosproyectos {
+    background-color:$clarito;
+    color:$negro;
+    margin: 5px;
+    text-align: center;
+    height: 60px;
+}
+
+.datos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+}
+
+.ubicacion {
+    background-color:$clarito;
+    color: $negro;
+    margin: 5px;
+    text-align: center;  
+    height: 60px;
+}
+
+.lugar {
+    text-align: center;
+}
+
+.botonmapa{
+    font-size: $Letra100;
+}
+
+.llamar {
+    text-align: center;
+}
+
+.botonllamar {
+    font-size: $Letra100;
+}
+
+
+.carousel {
+    margin: 10px;
+}

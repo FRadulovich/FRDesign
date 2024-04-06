@@ -1,0 +1,54 @@
+.navbar-brand {
+    color:$negro;
+    float: left;
+    font-weight: bold;
+    text-shadow: 0 0 5px $color1;
+    a {
+        text-decoration: none;
+        color:$negro;
+
+    }
+        
+        span {
+            color:$color2;
+        }
+
+}      
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    color:$blanco;
+    float: left;
+    font-weight: bold;
+    text-shadow: 0 0 5px $color1;
+    a {
+        text-decoration: none;
+        color:$clarito;
+    }    
+
+        span {
+            color:$color1;
+    }
+}
+
+.barra {
+    float: right;
+
+    
+    ul li {
+        list-style: none;
+        display: inline-block;
+    }
+    
+    a {
+        color:$blanco;
+        text-decoration: none;
+    }
+
+    &:hover {
+        color:$color1;
+    }
+}
