@@ -112,8 +112,8 @@ h6 {
 }
 @media only screen and (min-width: 480px) {
   .clientescard {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
   }
   h6 {
     width: 100%;
@@ -127,10 +127,16 @@ h6 {
     grid-template-columns: 1fr;
   }
 }
+@media only screen and (min-width: 620px) {
+  .clientescard {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
 @media only screen and (min-width: 768px) {
   .clientescard {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     justify-content: space-around;
     padding: 30px;
     margin: 10px;
@@ -142,9 +148,9 @@ h6 {
     text-align: center;
   }
   .contenedor-servicios {
-    text-align: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    grid-template-rows: repeat(3, 1fr);
   }
   .prueba1:hover {
     transform: translateY(-1%);
@@ -161,8 +167,8 @@ h6 {
   .contenedor-presupuestos {
     text-align: center;
     display: flex;
-    flex-direction: row;
-    grid-template-rows: repeat(3, 1fr);
+    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
   }
   .columna1:hover {
     transform: translateX(-1%);
@@ -172,6 +178,34 @@ h6 {
   }
   .columna3:hover {
     transform: translateX(-2%);
+  }
+}
+@media only screen and (min-width: 932px) {
+  .contenedor-presupuestos {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .columna1:hover {
+    transform: translateX(-1%);
+  }
+  .columna2:hover {
+    transform: translateX(-1%);
+  }
+  .columna3:hover {
+    transform: translateX(-2%);
+  }
+  .contenedor-servicios {
+    display: flex;
+    flex-direction: row;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media only screen and (min-width: 955px) {
+  .clientescard {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
   }
 }
 footer {
